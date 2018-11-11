@@ -1,0 +1,399 @@
+body{
+	top: 0;
+	margin:0;
+	padding: 0;
+	color: #22323f;
+	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+}
+header{
+	text-align: center;
+}
+.top{
+	text-decoration: none;
+	color: rgb(248,235,227);
+}
+.logos{
+	position: fixed;
+	top: 85%;
+	left: 93%;
+	height: 11%;
+	z-index: 1;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	overflow: hidden;
+}
+.name{
+	text-transform: capitalize;
+	font-size: 36px;
+	padding-top: 2%;
+	text-align: center;
+	color: #22323f;
+	font-weight: bold; 
+}
+.header{	
+	background: url(img/figs-3.jpg);
+	background-size: cover;
+	/*color: rgb(255,233, 220);*/
+	font-size: 30px;	
+}
+.menu{
+	background-color: #22323f/*rgb(12,12, 19)*/;
+	opacity: 0.92;
+	list-style: none;
+	margin: 0;	
+	height: 80px;	
+}
+.menu ul{}
+.menu li{
+	display: inline-block;
+	padding: 2% 2% 0 0%;
+	font-size: 22px;
+	line-height: 100%;
+	text-align: center;
+}
+.menu li a{
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(248,235,227);
+}
+.logo{
+	vertical-align: middle;
+	height: 65px;
+	transition: all 1s linear;	
+}
+.menu li:nth-child(3){
+	margin: 0;
+	padding: 0;
+	padding-right: 2%;
+}
+.menu a:hover{
+	color: #4d5f3d/* #58365d*/;
+}
+#top_name{
+	text-transform: uppercase;
+	font-size: 32px;
+	padding: 24% 3%;
+	text-align: right;
+	color: #000c14;
+	font-weight: bold;
+	margin: 0;
+}
+.menu:hover .logo{
+	transform: rotate(360deg);
+}
+
+/*Part2*/
+.about{	
+	background-image: url(img/q1.jpg);
+	background-repeat: no-repeat;
+	background-color: rgb(251,250,255);
+	background-size: 30%;
+    font-weight: 400;
+    font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+}
+
+.txt{
+	padding-top: 6%;
+	display: inline-block;
+	float: left;
+	font-size: 20.5px;
+	animation: txt 3s;
+}
+.t1{
+	width: 27%;
+	padding-left: 25%;
+}
+.t2{
+	width: 30%;
+	padding-left: 10%;
+}
+@keyframes txt{
+	from{
+		padding-top: 12%;
+		opacity: 0.5;
+	}
+	to{
+		padding-top: 6%;
+		opacity: 1;
+	}
+}
+
+/*Part3*/
+.varieties{
+	background: linear-gradient(rgb(251,250,255), #22323f);
+	font-size: 20.5px;
+}
+.varieties .name{
+	padding-bottom: 5%;
+	font-size: 30px;
+}
+.fig img{
+	width:92%;
+	border: 10px solid #e2dad4;
+	position: center middle;
+}
+.fig{
+	overflow: hidden;
+	min-height: 267px;
+}
+.descr{
+	display: inline-table;
+	text-align: center;
+	padding-top: 10%; 
+}
+/*.descr:nth-child(odd){
+	text-align: right;
+	padding-right: 4%;
+}
+.descr:nth-child(even){
+	text-align: left;
+}*/
+.fig:last-child{
+	color: rgb(251,250,255);
+	margin: 0;
+	padding-bottom: 0;
+}
+.grid{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-auto-rows: minmax(290px,auto);
+	overflow: hidden;
+	padding: 0 10%;
+	grid-gap: 0;
+}
+
+
+.space{
+	padding: 0;
+	margin: 0;
+	background-image: url(img/fresh-fig.jpg);
+	height: 300px;
+}
+.sp{
+	background-color: black;
+	opacity: 0.4;
+	width: 100%;
+	height: 100%;
+}
+.space input{
+	height: 20%;
+	width: 20%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 5px solid #c4c6d7;
+	margin-right: 4%;
+	color: #22323f;
+}
+.space input[type="text"], .space input[type="tel"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	color: #fff;
+}
+input:first-child{
+	margin-top: 7%;
+	margin-left: 15%;
+}
+
+
+
+/*Part4*/
+.contain_recipes {
+	font-family: Playfair Display,Georgia,Times,serif,Georgia,Times,serif;
+    font-weight: 400;
+}
+.contain_recipes .name{
+	padding: 4%;
+}
+.recipes{	
+	margin: 0;
+	padding: 0;
+	font-size: 20.5px;
+	text-align: center;
+	position: relative;
+	} 
+.recipes li{
+    list-style:none;
+    margin: 0;
+	padding: 0;
+	position: relative;
+}
+.re{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 24.7%;
+}
+.re_img{
+	width: 100%;
+}
+.style{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: #ded199;
+}
+.re:hover .style{
+	opacity: 0.9;/*
+	background: rgba(87,82,60,.5);*/
+}
+.style a{
+	text-decoration: none;
+	color: #22323f;
+	outline: none;
+}
+
+
+
+/*path5*/
+.buy{
+	position: relative;
+	background-color: #c4c6d7;
+	background-image: url(img/tree.jpg);
+	/*opacity: 0.99;*/
+	background-size: 35%;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.four{
+	background-image: url(img/form.jpg);
+	/*opacity: 0.97;*/
+	background-size: 45%;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.buy .name{
+	margin: 1% 0 0 -10%;
+	stroke: 2px solid #2f4a28 ;
+}
+.buy img{
+	width: 35%;
+	position: absolute;
+	right: 5%;
+}
+h1{
+	text-align: center;
+	font-size: 25px;
+}
+.box{
+	background-color: #485b4e  /*#706873 #4b3842*/;
+	color: white;
+	width: 25%;
+	top: 55%;
+	left: 45%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 1% 5%;
+}
+.box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.box input{
+	width: 100%;
+	margin-bottom: 3%;
+	font-size: 16px;
+	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+}
+.box input[type="text"], .box input[type="tel"],  input[type="E-mail"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	color: #fff;	
+}
+.box input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 30px;
+	color: #595565;
+	border-radius: 20px;
+	font-weight: bold;
+	margin-top: 4%;
+}
+.box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #d8d4a5;
+	color: #464353;
+}
+
+footer{
+	background-color: #4d5f3d;
+	text-align: center;
+	font-size: 20px;
+	padding: 2% 0
+}
+footer img{
+	display: inline-block;
+	height: 35%;
+}
+.foot{
+	color: rgb(248,235,227);
+	margin: 0;
+	padding: 0;
+}
+@media only screen and (max-width : 1024px) {
+	.descr{
+		padding: 0 2%; 
+	}
+	.menu{
+		height: 70px;
+	}
+	#top_name{
+		color: #ffe9dc;
+	}
+	.buy{
+	background-image: url(img/tree.jpg);
+	background-size: 48%;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+	.four{
+	background-image: url(img/form.jpg);
+	background-size: 46%;
+	background-repeat: no-repeat;
+	background-position: right 55%;
+}
+	.box{
+		height: 70%;
+	}
+	.buy .name{
+		margin: 4% 11% 0 0;
+		color: #fff;
+		stroke: 2px solid #2f4a28 ;
+	}
+	.re{
+		width: 45%;
+	}
+	.re_img{
+		width: 70%;
+	}
+	.style{
+		overflow: hidden;
+	}
+	.contain_recipes .container{
+		min-height: 950px;
+	}
+	.visible{
+		opacity: 0;
+	}
+	.space{
+		height: 200px;
+	}
+}
+@media only screen and (max-width : 480px) {
+
+
+}
